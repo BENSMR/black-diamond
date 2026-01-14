@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Diamond Ltd | Global Commodities & Market Integration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #c5a059; --bg: #050505; --surface: #0f0f0f; --text: #ffffff; }
+        body { background: var(--bg); color: var(--text); font-family: 'Montserrat', sans-serif; margin: 0; line-height: 1.6; }
+        
+        /* HERO SECTION */
+        .hero { padding: 100px 20px; text-align: center; border-bottom: 2px solid var(--gold); background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1500&q=80'); background-size: cover; }
+        .hero h1 { font-size: 3.5rem; letter-spacing: 12px; margin: 0; font-weight: 200; }
+        .hero .offices { font-size: 0.9rem; color: var(--gold); letter-spacing: 4px; margin-top: 15px; }
+
+        /* SERVICES & INQUIRY SECTION */
+        .main-content { max-width: 1100px; margin: auto; padding: 60px 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+        
+        .box { background: var(--surface); padding: 40px; border: 1px solid #222; position: relative; }
+        .box h2 { color: var(--gold); font-weight: 400; margin-top: 0; letter-spacing: 2px; }
+        .box ul { padding-left: 20px; color: #aaa; }
+        .box ul li { margin-bottom: 10px; }
+
+        /* OPEN INQUIRY FORM */
+        .form-section { background: #111; padding: 50px; border-radius: 4px; margin-top: 40px; border: 1px solid #333; }
+        .form-section h3 { margin-top: 0; letter-spacing: 3px; }
+        input, select, textarea { width: 100%; padding: 15px; background: #050505; border: 1px solid #444; color: white; margin-bottom: 20px; box-sizing: border-box; }
+        textarea { resize: vertical; }
+        button { width: 100%; padding: 20px; background: var(--gold); color: #000; border: none; font-weight: 700; letter-spacing: 3px; cursor: pointer; transition: 0.3s; }
+        button:hover { background: #fff; }
+
+        /* BOTTOM BRANDS */
+        .brand-footer { background: #000; padding: 60px 20px; text-align: center; border-top: 1px solid #222; }
+        .brand-links { display: flex; justify-content: center; gap: 30px; margin-top: 30px; }
+        .brand-links a { border: 1px solid #333; padding: 15px 25px; color: #777; text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; transition: 0.3s; }
+        .brand-links a:hover { border-color: var(--gold); color: var(--gold); }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>BLACK DIAMOND LTD</h1>
+        <div class="offices">DUBAI • TUNISIA • INDIA • BULGARIA</div>
+        <p style="margin-top: 40px; max-width: 700px; margin-left: auto; margin-right: auto; color: #ccc;">
+            Global Market Integration & International Commodity Brokerage. 
+            Facilitating industrial connections across the GCC and North Africa.
+        </p>
+    </section>
+
+    <div class="main-content">
+        <div class="grid">
+            <div class="box">
+                <h2>Brokerage Services</h2>
+                <p>We source and broker a wide variety of global commodities, including but not limited to:</p>
+                <ul>
+                    <li><b>Metals:</b> Aluminum Scrap, Copper, Steel & Iron.</li>
+                    <li><b>Agri-Food:</b> Sugar (B2B), Grains & Pulses.</li>
+                    <li><b>Oils:</b> Used Cooking Oil (UCO), Edible Oils & Lubricants.</li>
+                    <li><b>Materials:</b> Raw minerals and industrial scrap.</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Market Integration</h2>
+                <p>Facilitating the expansion of enterprises into new territories:</p>
+                <ul>
+                    <li>Resource Sourcing & Supply Chain Management.</li>
+                    <li>GCC & North Africa Market Entry Support.</li>
+                    <li>Consultancy for Industrial Setup in Bulgaria.</li>
+                    <li>Strategic Partnership & Local Representation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>OPEN SERVICE INQUIRY</h3>
+            <p style="color: #777; font-size: 0.9rem; margin-bottom: 30px;">Specify your requirements below. Our brokerage team handles all types of raw materials and market integration requests.</p>
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f861bd6c-d2b3-4216-b76f-989ea6f3e26d">
+                <input type="hidden" name="to_email" value="info@blackdiamondltd.com">
+                <input type="text" name="name" placeholder="Full Name / Company Name" required>
+                <input type="email" name="email" placeholder="Professional Email" required>
+                <select name="primary_interest">
+                    <option value="Commodity Brokerage">Commodity Brokerage (Aluminum, Sugar, Oil, etc.)</option>
+                    <option value="Market Integration">Market Integration / Consultancy</option>
+                    <option value="Resource Sourcing">Global Resource Sourcing</option>
+                    <option value="Other">Other Inquiry</option>
+                </select>
+                <textarea name="message" rows="6" placeholder="Describe what you need (e.g., 'Inquiry for 500MT Aluminum Scrap' or 'Looking for sugar suppliers in North Africa')..."></textarea>
+                <input type="hidden" name="redirect" value="https://www.blackdiamondltd.com/">
+                <button type="submit">SUBMIT REQUIREMENTS</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="brand-footer">
+        <p style="font-size: 0.7rem; color: #555; letter-spacing: 3px; text-transform: uppercase;">A Black Diamond Ltd Subsidiary Portfolio</p>
+        <div class="brand-links">
+            <a href="https://blackdiamondltd.com/aura-sphere-app">AURA SPHERE CRM</a>
+            <a href="https://blackdiamondltd.com/krystalis-essentiel">KRYSTALIS CARE</a>
+            <a href="mailto:info@blackdiamondltd.com">EMAIL</a>
+        </div>
+        <p style="margin-top: 40px; font-size: 0.7rem; color: #333;">UIC: 207807571 • Sofia, Bulgaria • &copy; 2026</p>
+    </section>
+
+</body>
+</html>
