@@ -77,7 +77,9 @@
             <h3>OPEN SERVICE INQUIRY</h3>
             <p style="color: #777; font-size: 0.9rem; margin-bottom: 30px;">Specify your requirements below. Our brokerage team handles all types of raw materials and market integration requests.</p>
             
-            <form action="https://formspree.io/f/mkyayrzo" method="POST">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f861bd6c-d2b3-4216-b76f-989ea6f3e26d">
+                <input type="hidden" name="to_email" value="info@blackdiamondltd.com">
                 <input type="text" name="name" placeholder="Full Name / Company Name" required>
                 <input type="email" name="email" placeholder="Professional Email" required>
                 <select name="primary_interest">
@@ -86,7 +88,8 @@
                     <option value="Resource Sourcing">Global Resource Sourcing</option>
                     <option value="Other">Other Inquiry</option>
                 </select>
-                <textarea name="requirements" rows="6" placeholder="Describe what you need (e.g., 'Inquiry for 500MT Aluminum Scrap' or 'Looking for sugar suppliers in North Africa')..."></textarea>
+                <textarea name="message" rows="6" placeholder="Describe what you need (e.g., 'Inquiry for 500MT Aluminum Scrap' or 'Looking for sugar suppliers in North Africa')..."></textarea>
+                <input type="hidden" name="redirect" value="https://www.blackdiamondltd.com/">
                 <button type="submit">SUBMIT REQUIREMENTS</button>
             </form>
         </div>
