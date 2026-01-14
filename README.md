@@ -1,2 +1,1 @@
-# black-diamond
-website
+# Black Diamond Ltd
